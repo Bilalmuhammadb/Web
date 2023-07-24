@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --navbar-height:59px;   
+}
+#navebar{
+    display: flex;
+    align-items: center;
+}
+#logo{
+margin: 34px
+}
+#logo img{
+    height: 59px;
+    margin:10px;
+}
+#navebar ul{
+    display: flex;
+}
+#navebar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navebar ul li a:hover{
+    color: black;
+    background-color: white;
+    align-items:center;
+}
+#navebar ul li a{
+    color: white;
+   display: block;
+   padding: 3px 22px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+#navebar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navebar{
+    position: absolute;
+}
+#home{
+    /* display: flex; */
+    padding: 80px;
+    color: azure;
+    background-image: url(sports-car-g968c6f53e_1280.jpg);
+    height: 400px ;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    opacity: 0.89;
+}
+#road{
+    display: flex;
+    padding: 150px;
+    margin: 40px;
+    color: red;
+    font-size: 2.4rem;
+    justify-content: left  ;
+}
+#offer{
+/* margin: 34px; */
+display: flex;
+}
+.box{
+    text-align: right;
+}
+.box img{
+    height: 200px;
+    border: 2px solid blueviolet;
+    margin: 30px;
+    justify-content: right;
+}
+#h-primary{
+    font-size: 2.8rem;
+    padding: 3px;
+    margin: 5px;
+    background-color: black;
+    color: red;
+    text-align: center;
+}
+.grid-container{
+    display: grid;   
+    grid-template-columns:  auto auto;
+    background-color: rgb(1, 2, 2);
+    /* padding: 30px; */
+    color: white;
+}
+.grid{
+    background-color:black;
+    border: 2px solid black;
+    padding: 20px;
+    font-size: 30px;
+}
+.grid h1{
+    color:red ;
+}
+.box{
+    justify-content: right;
+}
+#ff{
+    color: red;
+    background-color: black;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+}
+#flexbox{
+    display: grid;
+    grid-template-columns: auto auto auto;
+padding: 30px;
+gap: 70px;
+color:white;
+background-color: black;
+font-size: 30px;
+
+}
+.item h2{
+color: red;
+}
+body{
+    background-color: rgb(22, 22, 22);
+}
+.footer{
+    display: grid;
+    padding: 80px;
+    color: azure;
+    background-image: url(bmw-g3ea8e9773_1280.jpg);
+    height: 400px ;
+}
+.footer div h2{
+    display: flex;
+    grid-template-columns: auto auto ;
+    color: red;
+}
